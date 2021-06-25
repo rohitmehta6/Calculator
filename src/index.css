@@ -1,13 +1,129 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+  font-size: 60%;
 }
+
+.main-container{
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1a33c;
+}
+
+.inner-container{
+  background-color: black;
+  height: 80vh;
+  width: 40vh;
+  border-radius: 5rem;
+  box-shadow: 0rem 1.0rem 6.0rem -6.0rem rgb(27, 27, 27);
+}
+
+.top{
+  height: 10vh;
+  color: #fff;
+  /* text-align: center; */
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+}
+
+span{
+  margin-left: 3.2rem;
+  /* margin-top: 6px; */
+}
+.icons{
+  margin-right: 3.2rem; 
+}
+
+i{
+  margin-right: 0.8rem;
+  font-size: small;
+}
+
+.display{
+  text-align: right;
+  color: #fff;
+  font-size: 5.0rem;
+  padding-right: 2.0rem;
+  overflow-x: scroll;
+  height: 20vh;
+  margin-top: 2.8rem;
+  margin-bottom: -0.8rem;
+
+  
+} 
+
+.display::-webkit-scrollbar {
+  overflow: hidden; 
+}
+
+.btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+button{
+  font-size:2.4rem;
+  height: 5.0rem;
+  width: 5.0rem;
+  border-radius: 5.0rem;
+  background-color: #333;
+  color: #fff;
+  outline: none;
+  border: none;
+  margin: 0.6rem;
+}
+
+button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.1s ease-in;
+}
+
+
+.func{
+  background-color: #a5a5a5;
+  color: black;
+}
+
+.operator{
+  background-color: #f1a33c;
+/* font-weight: bold; */
+}
+
+#zero{
+  width: 11.4rem;
+  text-align: left;
+  padding-left: 2.8rem;
+}
+
+.bottom{
+  height: 0.15rem;
+  background-color:#fff;
+  width: 10.0rem;
+  margin: auto;
+  margin-top: 1.6rem;
+}
+/* 
+@media(max-width: 998px){
+  html{
+    font-size: 38%;
+  }
+}
+
+@media(max-width:768px){
+  html{
+    font-size: 25%;
+  }
+} */
